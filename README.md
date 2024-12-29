@@ -15,11 +15,11 @@ This project demonstrates a data engineering pipeline that simulates IoT sensor 
 - The consumer processes the incoming data and inserts it into a Cassandra database for storage and querying.
 
 # Technologies Used
-- Python: For data simulation, Kafka producer, and consumer.
-- Apache Kafka: For real-time data streaming in Kraft mode.
-- Apache Cassandra: For scalable and fault-tolerant data storage.
-- Docker Compose: To orchestrate Kafka and Cassandra services.
-- Linux: Host environment for running Docker containers.
+- **Python:** For data simulation, Kafka producer, and consumer.
+- **Apache Kafka:** For real-time data streaming in Kraft mode.
+- **Apache Cassandra:** For scalable and fault-tolerant data storage.
+- **Docker Compose:** To orchestrate Kafka and Cassandra services.
+- **Linux:** Host environment for running Docker containers.
 
 # Setup Instructions
 ## Prerequisites
@@ -38,7 +38,7 @@ This project demonstrates a data engineering pipeline that simulates IoT sensor 
 - `iot_data.py`: Simulates and sends IoT data to Kafka.
 - `stream_iot_data.py`: Consumes Kafka messages and inserts them into Cassandra.
 
-## How It Works
+# How It Works
 ### 1. Start Services:
 - Run `docker-compose up` to start Kafka and Cassandra containers.
 ### 2. Generate IoT Data:
@@ -46,7 +46,7 @@ This project demonstrates a data engineering pipeline that simulates IoT sensor 
 ### 3. Stream and Ingest Data:
 - Run `stream_iot_data.py` to consume Kafka messages and store them in Cassandra.
 
-## Sample Output
+# Sample Output
 ### Kafka Producer Output:
 ```
 {
@@ -63,11 +63,10 @@ device_id, timestamp, temperature, humidity)
 VALUES ('device_2', 2024-12-29 04:01:58.316000+0000, 26.51, 40.78)
 ```
 
-## Directory Structure
+# Directory Structure
 ```
-├── data/                     # Directory for storing test data or logs
+└── README.md                 # Project documentation
 ├── docker-compose.yml        # Docker Compose file for Kafka and Cassandra setup
 ├── iot_data.py               # IoT data simulation and Kafka producer script
 ├── stream_iot_data.py        # Kafka consumer and Cassandra insertion script
-└── README.md                 # Project documentation
 ```
