@@ -1,6 +1,7 @@
 # **Streaming Data with Kafka: Exploring KRaft (Kafka Raft)**
 
 # Overview
+![](image.jpg)
 This project demonstrates a data engineering pipeline that simulates IoT sensor data, streams it using Apache Kafka (Kafka Kraft mode), and ingests the data into a Cassandra database. The pipeline mimics real-time data processing and storage scenarios, suitable for Smart City or Smart Home use cases.
 
 # Pipeline Architecture
